@@ -13,11 +13,11 @@
         </library>
       </libraries>
     </data-source>
-    <data-source source="LOCAL" name="db [2]" uuid="0b6885c2-4c01-4b4b-a2f2-89ccd21a83dd">
+    <data-source source="LOCAL" name="db [2]" uuid="0166684b-aa5d-46c9-896c-3cae386c197b">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\mac\Workspace\chapter4\db.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\mac\Workspace\chapter6(new)\db.sqlite3</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
       <libraries>
         <library>
