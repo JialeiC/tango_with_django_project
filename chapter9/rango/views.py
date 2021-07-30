@@ -66,7 +66,6 @@ def add_page(request, category_name_slug):
     except:
         category = None
 
-    # You cannot add a page to a Category that does not exist... DM
     if category is None:
         return redirect(reverse('rango:index'))
 
@@ -91,6 +90,7 @@ def add_page(request, category_name_slug):
 
 def register(request):
     registered = False
+
     if request.method == 'POST':
 
         user_form = UserForm(data=request.POST)
@@ -101,6 +101,7 @@ def register(request):
             user = user_form.save()
             user.set_password(user.password)
             user.save()
+
             profile = profile_form.save(commit=False)
             profile.user = user
 
@@ -117,8 +118,8 @@ def register(request):
     return render(request,
                   'rango/register.html',
                   context={'user_form': user_form,
-                   'profile_form': profile_form,
-                   'registered': registered})
+                           'profile_form': profile_form,
+                           'registered': registered})
 
 def user_login(request):
     if request.method == 'POST':
