@@ -62,7 +62,6 @@ def add_page(request, category_name_slug):
     except:
         category = None
 
-    # You cannot add a page to a Category that does not exist... DM
     if category is None:
         return redirect(reverse('rango:index'))
 
